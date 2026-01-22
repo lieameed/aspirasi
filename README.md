@@ -18,3 +18,42 @@ sudo rm -rf */
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
 </p>
+
+---
+
+# Contributing
+we absolutely welcome people that want to help and contribute to making this website a better place, wether its about fixing bugs, enhancing the UI/UX, or expanding the comunity functionability.
+
+How You Can Contribute To The Web :grin: :point_down: :
+- Fork This Repositories
+  
+- Create a New Branch For Your New Features/Bug Fixes
+  
+- Commit The Changes With a Descriptive Message
+  
+- Push To Your Branch And Open a Pull Request.
+  
+- Wait For Review and Feedback Before You're Going to Merge The Branch
+
+Contribution Guidelines
+
+- Write Clean and Maintainable Code.
+
+- Document Your Features and Changes Clearly.
+
+- Be Respectful and Collaborative in Discussions.
+
+---
+
+# License
+
+This project is licensed under the MIT License.
+You are free to use, modify, and redistribute it with proper credit.
+
+---
+
+# Group Members
+- Lionel Cristian / XI TKJ 2
+- Felixius Kevin Candra / XI TKJ 2
+- Marvin Alfredo / XI TKJ 2
+- Venan Sebastian Budianto / XI TKJ 2
