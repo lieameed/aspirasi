@@ -6,7 +6,7 @@
 # Instalation guide (for noobs)
 Clone this repository:
 ```bash
-git clone 
+git clone https://github.com/lieameed/aspirasi.git
 ```
 
 enter the project directory, the one that you've cloned
