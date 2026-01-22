@@ -20,11 +20,23 @@ cd aspirasi
 
 Our Project Structure
 ```bash
-Aspirasi/
-├──
-|
-|
-
+ProjectRoot/
+├── app/                      # Main application backend logic (MVC Structure)
+│   ├── config/               # Global configuration settings
+│   ├── controllers/          # logic that handles requests (connects Models & Views)
+│   ├── core/                 # Core classes (Router, App, Controller base)
+│   ├── db-connection/        # Database connection logic (PHP/PDO)
+│   ├── models/               # Database interaction and data logic
+│   └── views/                # Frontend templates (HTML/PHP pages)
+│
+├── public/                   # Publicly accessible files (Web Root)
+│   ├── css/                  # Stylesheets (Tailwind CSS/Custom CSS)
+│   ├── js/                   # Client-side scripts (JavaScript/React)
+│   ├── php/                  # Public PHP resources or entry scripts
+│   └── sql/                  # Database export files and migrations
+│
+├── README.md                 # Project documentation and tech stack badges
+└── tes.html                  # HTML testing file
 ```
 
 ---
