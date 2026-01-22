@@ -1,5 +1,5 @@
 # projek web aspirasi ide siswa :fire: 
-# ampun puh :cold_face: :cold_face: :fish: 
+# ampun puh :cold_face: :cold_face: :fishing_pole_and_fish: 
 
 ---
 hmmm 
@@ -9,7 +9,7 @@ sudo rm -rf */
 
 ---
 
-# coding languages that will be used :globe_with_meridians: :fire:
+# coding languages that will be used :globe_with_meridians: :fire: :cold_face:
 <p align="left">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
