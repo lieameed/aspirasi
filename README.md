@@ -3,10 +3,28 @@
 
 ---
 
+# Instalation guide (for noobs)
+Clone this repository:
+```bash
+git clone 
+```
+
+enter the project directory, the one that you've cloned
+```bash
+cd aspirasi
+```
+
+---
+
 # Project Structure
 
+Our Project Structure
 ```bash
-sudo rm -rf */
+Aspirasi/
+├──
+|
+|
+
 ```
 
 ---
