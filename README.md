@@ -16,6 +16,18 @@ cd aspirasi
 
 ---
 
+# Installing The Database
+
+- Go To PhpMyAdmin
+- Next, Create Database named "aspi"
+
+```bash
+aspi
+```
+
+- then, grab the sql that is in this file(aspi.sql), and import the sql file
+- Now you're ready to use the website
+---
 # Project Structure
 
 Our Project Structure
