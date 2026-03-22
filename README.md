@@ -1,6 +1,4 @@
 # projek web aspirasi ide siswa :fire: 
-# ampun puh :cold_face: :cold_face: :fishing_pole_and_fish: 
-
 ---
 
 # Instalation guide (for noobs)
@@ -14,6 +12,10 @@ enter the project directory, the one that you've cloned
 cd aspirasi
 ```
 
+open your terminal, dont forget to connect to tailwind
+```bash
+npm run dev
+```
 ---
 
 # Installing The Database
@@ -33,22 +35,37 @@ aspi
 Our Project Structure
 ```bash
 ProjectRoot/
-├── app/                      # Main application backend logic (MVC Structure)
-│   ├── config/               # Global configuration settings
-│   ├── controllers/          # logic that handles requests (connects Models & Views)
-│   ├── core/                 # Core classes (Router, App, Controller base)
-│   ├── db-connection/        # Database connection logic (PHP/PDO)
-│   ├── models/               # Database interaction and data logic
-│   └── views/                # Frontend templates (HTML/PHP pages)
+├── app/                        # Main application backend logic (MVC)
+│   ├── config/                 # Global configuration settings
+│   ├── controllers/            # Logic that handles requests (Connects Models & Views)
+│   ├── core/                   # Core classes (Router, App, Controller base)
+│   ├── db-connection/          # Database connection logic
+│   │   └── db-connection.php   # Database PDO/MySQLi instance
+│   ├── models/                 # Database interaction and data logic
+│   ├── resources/              # Source assets
+│   │   └── css/                # Tailwind input source (input.css)
+│   └── views/                  # Frontend templates (HTML/PHP pages)
 │
-├── public/                   # Publicly accessible files (Web Root)
-│   ├── css/                  # Stylesheets (Tailwind CSS/Custom CSS)
-│   ├── js/                   # Client-side scripts (JavaScript/React)
-│   ├── php/                  # Public PHP resources or entry scripts
-│   └── sql/                  # Database export files and migrations
+├── public/                     # Web Root (Publicly accessible files)
+│   ├── assets/                 # Static assets
+│   │   ├── fonts/              # Custom fonts (e.g., Italiana-Regular.ttf)
+│   │   └── images/             # Image assets (e.g., karbit gerfa.png)
+│   ├── css/                    # Compiled Stylesheets
+│   │   └── output.css          # Final Tailwind CSS (Used in views)
+│   ├── js/                     # Client-side scripts
+│   ├── php/                    # Public entry scripts (Actual pages)
+│   │   ├── homepage.php        # Main Landing Page
+│   │   ├── ide.php             # Ideas Page
+│   │   ├── detailide.php       # Detailed Ideas Page
+│   │   ├── login.php           # Login Page
+│   │   └── signup.php          # Registration Page
+│   ├── sql/                    # Database migrations and exports
+│   └── index.php               # Application entry point
 │
-├── README.md                 # Project documentation and tech stack badges
-└── tes.html                  # HTML testing file
+├── node_modules/               # NPM dependencies (Tailwind, etc.)
+├── .gitignore                  # Files to exclude from Git
+├── package.json                # NPM project metadata and scripts
+└── README.md                   # Project documentation
 ```
 
 ---
