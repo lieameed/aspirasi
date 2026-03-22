@@ -1,7 +1,7 @@
 # projek web aspirasi ide siswa :fire: 
 ---
 
-# Instalation guide (for noobs)
+# Instalation guide
 Clone this repository:
 ```bash
 git clone https://github.com/lieameed/aspirasi.git
