@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: PJS400;
+    src: url("./public/assets/fonts/Italiana-Regular.ttf");
+}
+
+@theme{
+    --color-primary:#ffffff;
+    --color-secondary:#ffffff;
+    --font-custom-regular: PJS400;    
+}
