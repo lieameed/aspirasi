@@ -9,13 +9,13 @@
 
     <a href="../index.php"><i class="fa-solid fa-arrow-left text-white absolute top-10 left-10 cursor-pointer text-4xl hover:text-white/10 transition-all"></i></a>
 
-    <form action="" class="w-full max-w-[644px] h-[825px] bg-[#111827] rounded-3xl shadow-[0_0_80px_rgba(99,102,241,0.15)] flex flex-col items-center pt-[50px] border border-white/10">
+    <form action="" class="w-full max-w-[644px] py-12 bg-[#111827] rounded-3xl shadow-[0_0_80px_rgba(99,102,241,0.15)] flex flex-col items-center pt-[50px] border border-white/10">
 
         <i class="fa-regular fa-user text-7xl text-white mb-8"></i>
 
         <div class="text-center mb-10">
             <h1 class="text-white text-4xl font-bold mb-4">Hello!</h1>
-            <p class="text-gray-400 text-xl">Sudah Memiliki Akun? <span class="text-blue-500 cursor-pointer">Log In</span></p>
+            <p class="text-gray-400 text-xl">Sudah Memiliki Akun? <span button class="text-blue-500 cursor-pointer"><a href="login.php">Log In</a></span></p>
         </div>
 
         <div class="w-full px-20"> 

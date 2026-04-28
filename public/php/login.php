@@ -9,7 +9,7 @@
 
     <a href="../index.php"><i class="fa-solid fa-arrow-left text-white absolute top-10 left-10 cursor-pointer text-4xl hover:text-white/10 transition-all"></i></a>
 
-    <form action="" class="w-full max-w-[644px] h-[825px] bg-[#111827] rounded-3xl shadow-[0_0_80px_rgba(99,102,241,0.15)] flex flex-col items-center justify-center border border-white/10">
+    <form action="" class="w-full max-w-[644px] py-12 bg-[#111827] rounded-3xl shadow-[0_0_80px_rgba(99,102,241,0.15)] flex flex-col items-center justify-center border border-white/10">
 
         <a href="homepage.php" class="inline-block">
             <i class="fa-regular fa-user text-7xl text-white mb-8"></i>
@@ -17,7 +17,7 @@
 
         <div class="text-center mb-10">
             <h1 class="text-white text-4xl font-bold mb-4">Welcome Back!</h1>
-            <p class="text-gray-400 text-xl">Belum memiliki akun? <span class="text-blue-500 cursor-pointer">Sign-Up</span></p>
+            <p class="text-gray-400 text-xl">Belum memiliki akun? <span class="text-blue-500 cursor-pointer"><a href="signup.php">Sign-Up</a></span></p>
         </div>
 
         <div class="w-full px-20"> 
@@ -27,6 +27,10 @@
         <div class="w-full px-20"> 
             <input type="password" placeholder="Masukkan Password Anda..." class="w-full h-[60px] bg-white/5 border border-white/10 rounded-2xl px-6 text-white text-lg outline-none focus:border-blue-500 transition-all mb-6">
         </div> 
+
+        <div class="w-full px-20 py-100 mb-6 text-right"> 
+            <a href="#" class="text-blue-500 text-sm hover:text-blue-400 transition-all cursor-pointer">Forgot password</a>
+        </div>
 
         <div class="w-full px-20">
             <button class="w-full h-[60px] bg-white border border-white/10 rounded-2xl px-6 text-black text-xl outline-none transition-all mb-6 hover:bg-white/20 hover:text-white transition-all font-bold">Log-In</button>
