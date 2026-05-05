@@ -4,6 +4,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/output.css">
     <title>SignupBang</title>
+    <style>
+    .fade-in-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1s ease-out;
+    }
+
+    .fade-in-scroll.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    </style>
 </head>
 <body class="bg-black flex items-center justify-center min-h-screen">
 
@@ -67,5 +79,24 @@
         </div>
     </form>
 
+    <script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                } else {
+                    entry.target.classList.remove('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
