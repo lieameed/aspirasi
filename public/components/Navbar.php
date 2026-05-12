@@ -4,7 +4,7 @@
         <h1 class="text-white font-bold text-xl md:hidden">Portal Ide</h1>
 
         <div class="hidden md:flex flex-row items-center text-white text-lg flex-1 justify-end gap-6">
-            <a href="/index.php" class="hover:text-[#6366F1] transition-all">Home</a>
+            <a href="/php/homepage.php" class="hover:text-[#6366F1] transition-all">Home</a>
             <a href="/post.php" class="hover:text-[#6366F1] transition-all">Post</a>
             <a href="/php/explore.php" class="hover:text-[#6366F1] transition-all">Explore</a>
             <a href="/php/ide.php" class="hover:text-[#6366F1] transition-all">Forums</a>
@@ -15,7 +15,7 @@
             <p class="text-gray-600">|</p>
 
             <a href="/php/profile.php">
-                <img src="assets/karbit gerfa.png"
+                <img src="../assets/karbit gerfa.png"
                     alt=""
                     class="w-[50px] h-[50px] rounded-full object-cover border-2 border-[#6366F1] hover:scale-105 hover:ring-2 hover:ring-[#6366F1] transition-all cursor-pointer">
             </a>

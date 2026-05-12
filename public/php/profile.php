@@ -8,9 +8,9 @@
     
 </head>
 
-<body class="bg-[#F8FAFC] min-h-screen font-sans flex flex-col">
+<body class="bg-[#05070A] min-h-screen font-sans flex flex-col">
 
-    <?php include '../components/navbar.php'; ?>
+    <?php include '../components/Navbar.php'; ?>
 
     <div class="relative">
         <div class="w-full h-64 md:h-80 overflow-hidden">
@@ -26,7 +26,7 @@
                     </div>
 
                 <div class="flex-1 flex justify-end mb-4 gap-3">
-                    <button class="bg-[#2D3E50] text-white px-6 py-2 rounded-lg flex items-center gap-2 hover:bg-slate-700 transition-all font-medium">
+                    <button class="bg-[#5370B0] text-white px-6 py-2 rounded-lg flex items-center gap-2 hover:bg-slate-700 transition-all font-medium">
                         <i class="fa-solid fa-user-plus text-sm"></i> Add Friend
                     </button>
                     <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-full transition-colors">
@@ -36,22 +36,22 @@
             </div>
 
             <div class="mt-6">
-                <h1 class="text-4xl font-bold text-gray-900">Lieameed</h1>
-                <p class="text-xl text-gray-600 mt-1">Siswa | XI TKJ 2 | SMK Pontianak</p>
+                <h1 class="text-4xl font-bold text-white">Lieameed</h1>
+                <p class="text-xl text-white mt-1">Siswa | XI TKJ 2 | SMK Pontianak</p>
                 <div class="flex gap-4 mt-2 text-lg">
-                    <p><span class="font-bold">1</span> Communities</p>
-                    <p><span class="font-bold">10</span> Friends</p>
+                    <p class="font-bold text-white"><span class="font-bold text-white">1</span> Communities</p>
+                    <p class="font-bold text-white"><span class="font-bold text-white">10</span> Friends</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="max-w-6xl mx-auto px-6 mt-10 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-6 mt-10 border-b border-white">
         <div class="flex justify-around md:justify-start md:gap-20 text-lg font-semibold text-gray-500">
-            <a href="#" class="pb-4 border-b-4 border-[#0F172A] text-[#0F172A] px-4">Posts</a>
-            <a href="#" class="pb-4 hover:text-gray-800 px-4">Activity</a>
-            <a href="#" class="pb-4 hover:text-gray-800 px-4">Favourites</a>
-            <a href="#" class="pb-4 hover:text-gray-800 px-4">About Me</a>
+            <a href="#" class="pb-4 border-b-4 border-[#000000] text-white px-4">Posts</a>
+            <a href="#" class="pb-4 hover:text-white px-4">Activity</a>
+            <a href="#" class="pb-4 hover:text-white px-4">Favourites</a>
+            <a href="#" class="pb-4 hover:text-white px-4">About Me</a>
         </div>
     </div>
 

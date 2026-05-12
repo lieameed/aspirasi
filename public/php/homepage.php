@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Homepage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/output.css">
 </head>
 
 <body class="bg-[#05070A] min-h-screen flex flex-col">
 
-   
-    <?php include 'components/navbar.php'; ?>
+    <?php include_once '../components/Navbar.php';?>
 
     
     <div class="w-full max-w-[1200px] mx-auto h-[120px] bg-[#0F172A] rounded-2xl flex items-center justify-center mt-10 shadow-[0_0_20px_rgba(99,102,241,0.15)] px-10">
