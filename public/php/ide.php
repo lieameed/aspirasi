@@ -23,12 +23,12 @@
                 
                 <p class="text-gray-600">|</p>
 
-                <a href="login.php">
-                    <button class="w-[120px] h-[45px] bg-[#6366F1] rounded-xl hover:scale-105 transition-all font-semibold text-white">Log-In</button>
+                <a href="php/login.php">
+                    <button class="w-[120px] h-[45px] bg-[#6366F1] rounded-xl hover:scale-105 cursor-pointer transition-all font-semibold text-white">Log-In</button>
                 </a>
                 
                 <a href="signup.php">
-                    <button class="w-[120px] h-[45px] border-2 border-[#6366F1] text-[#6366F1] rounded-xl hover:scale-105 transition-all font-semibold">Sign-up</button>
+                    <button class="w-[120px] h-[45px] border-2 border-[#6366F1] text-[#6366F1] rounded-xl hover:scale-105 cursor-pointer transition-all font-semibold">Sign-up</button>
                 </a>
             </div>
 

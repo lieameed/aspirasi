@@ -18,17 +18,17 @@
                 <a href="php/explore.php" class="hover:text-[#6366F1] cursor-pointer transition-all">Explore</a>
                 <a href="php/ide.php" class="hover:text-[#6366F1] cursor-pointer transition-all">Forums</a>
                 <a href="php/detailide.php" class="hover:text-[#6366F1] cursor-pointer transition-all">Detailed</a>
-                <a href="notifications.php" class="hover:text-[#6366F1] cursor-pointer transition-all">Notification</a>
+                <a href="php/notifications.php" class="hover:text-[#6366F1] cursor-pointer transition-all">Notification</a>
                 <a href="about.php" class="hover:text-[#6366F1] cursor-pointer transition-all">About App</a>
                 
                 <p class="text-gray-600">|</p>
 
                 <a href="php/login.php">
-                    <button class="w-[120px] h-[45px] bg-[#6366F1] rounded-xl hover:scale-105 transition-all font-semibold text-white">Log-In</button>
+                    <button class="w-[120px] h-[45px] bg-[#6366F1] rounded-xl hover:scale-105 cursor-pointer transition-all font-semibold text-white">Log-In</button>
                 </a>
                 
                 <a href="php/signup.php">
-                    <button class="w-[120px] h-[45px] border-2 border-[#6366F1] text-[#6366F1] rounded-xl hover:scale-105 transition-all font-semibold">Sign-up</button>
+                    <button class="w-[120px] h-[45px] border-2 border-[#6366F1] text-[#6366F1] rounded-xl hover:scale-105 cursor-pointer transition-all font-semibold">Sign-up</button>
                 </a>
             </div>
 
