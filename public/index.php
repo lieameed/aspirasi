@@ -177,7 +177,7 @@
                         </div>
 
                     </div>
-
+    
                 </div>
 
                 <div class="flex gap-4 bg-[#111827] rounded-2xl p-4 border border-white/10
@@ -204,18 +204,18 @@
                                 <i class="fa-solid fa-location-dot text-orange-400"></i>
                                 <span>Pontianak Event</span>
                             </div>
-
+                            
                         </div>
 
                     </div>
 
-                </div>
+                 </div>
 
-            </div>
+            </div> 
 
         </div>
 
-       </div>
+    </div>
 
 </body>
 </html>
