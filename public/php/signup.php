@@ -4,18 +4,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/output.css">
     <title>SignupBang</title>
+    <style>
+    .fade-in-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1s ease-out;
+    }
+
+    .fade-in-scroll.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    </style>
 </head>
 <body class="bg-black flex items-center justify-center min-h-screen">
 
     <a href="../index.php"><i class="fa-solid fa-arrow-left text-white absolute top-10 left-10 cursor-pointer text-4xl hover:text-white/10 transition-all"></i></a>
 
-    <form action="" class="w-full max-w-[644px] h-[825px] bg-[#111827] rounded-3xl shadow-[0_0_80px_rgba(99,102,241,0.15)] flex flex-col items-center pt-[50px] border border-white/10">
+    <form action="" class="w-full max-w-[644px] py-12 bg-[#111827] rounded-3xl shadow-[0_0_80px_rgba(99,102,241,0.15)] flex flex-col items-center pt-[50px] border border-white/10">
 
         <i class="fa-regular fa-user text-7xl text-white mb-8"></i>
 
         <div class="text-center mb-10">
             <h1 class="text-white text-4xl font-bold mb-4">Hello!</h1>
-            <p class="text-gray-400 text-xl">Sudah Memiliki Akun? <span class="text-blue-500 cursor-pointer">Log In</span></p>
+            <p class="text-gray-400 text-xl">Sudah Memiliki Akun? <span button class="text-blue-500 cursor-pointer"><a href="login.php">Log In</a></span></p>
         </div>
 
         <div class="w-full px-20"> 
@@ -67,5 +79,24 @@
         </div>
     </form>
 
+    <script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                } else {
+                    entry.target.classList.remove('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
