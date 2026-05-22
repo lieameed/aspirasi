@@ -17,7 +17,7 @@
 
             <div class="flex items-center gap-2 mb-4">
                 <i class="fa-solid fa-angle-left text-white text-xl"></i>
-                <h4 class="text-white text-base">Customer Feedback & Ideas For (nama web)</h4>
+                <h4 class="text-white text-base">Customer Feedback & Ideas For aspirasi</h4>
             </div>
 
             <p class="text-white text-lg leading-relaxed">Bagaimana kami dapat meningkatkan sistem pengelolaan ide dan gagasan kreatif siswa? Kami terbuka untuk menerima setiap ide dan masukan agar dapat membantu mengembangkan kreativitas siswa secara lebih terstruktur.</p>
@@ -116,14 +116,14 @@
 
         <div class="w-full lg:w-[320px] shrink-0 flex flex-col gap-6 text-sm">
             
-            <div class="bg-[#364A76] rounded-md flex flex-col gap-y-3 p-6">
+            <div class="bg-[#0F172A] rounded-md flex flex-col gap-y-3 p-6">
                 <h1 class="font-bold text-white text-xs tracking-wider mb-1">GIVE FEEDBACK</h1>
                 <a href="#" class="text-[#EF6E5B] hover:text-white transition-colors">General Feedback</a>
                 <a href="#" class="text-slate-200 hover:text-white transition-colors">Idea Impact Reports (Beta)</a>
                 <a href="#" class="text-slate-200 hover:text-white transition-colors">UserVoice Validation</a>
             </div>
 
-            <div class="bg-[#364A76] rounded-md flex flex-col gap-y-3 p-6">
+            <div class="bg-[#0F172A] rounded-md flex flex-col gap-y-3 p-6">
                 <h1 class="font-bold text-white text-xs tracking-wider mb-1">GENERAL FEEDBACK</h1>
                 <a href="#" class="text-[#EF6E5B] hover:text-white transition-colors">All Ideas</a>
                 <a href="#" class="text-slate-200 hover:text-white transition-colors">My Feedback</a>

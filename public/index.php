@@ -1,3 +1,3 @@
 <?php
-require_once 'php/feedback.php';
+require_once 'php/addfedback.php';
 ?>
