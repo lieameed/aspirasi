@@ -4,6 +4,19 @@
     <title>Hompeg</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/output.css">
+
+    <style>
+    .fade-in-scroll {
+        opacity: 0;
+        transform: translateY(10px);
+        transition: all 1s ease-out;
+    }
+
+    .fade-in-scroll.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    </style>
 </head>
 <body class="bg-[#05070A] min-h-screen flex flex-col">
     
@@ -38,7 +51,7 @@
         </div>
     </nav>
 
-    <div class="w-full max-w-[1200px] mx-auto h-[120px] bg-[#0F172A] rounded-2xl flex items-center justify-center mt-10 shadow-[0_0_20px_rgba(99,102,241,0.15)] px-10">
+    <div class="w-full max-w-[1200px] mx-auto h-[120px] bg-[#0F172A] rounded-2xl flex items-center justify-center mt-10 shadow-[0_0_20px_rgba(99,102,241,0.15)] px-10 fade-in-scroll">
         <div class="w-full"> 
             <div class="relative w-full flex items-center">
                 <i class="fa-solid fa-magnifying-glass absolute left-6 text-gray-400 text-xl"></i>
@@ -57,5 +70,24 @@
         </h1>
     </div>
 
+    <script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                } else {
+                    entry.target.classList.remove('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
