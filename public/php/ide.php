@@ -25,7 +25,7 @@
             <h1 class="text-white font-bold text-xl md:hidden">Portal Ide</h1>
 
             <div class="hidden md:flex flex-row items-center text-white text-lg flex-1 justify-end gap-6">
-                <a href="../index.php" class="hover:text-[#6366F1] cursor-pointer transition-all">Home</a>
+                <a href="homepage.php" class="hover:text-[#6366F1] cursor-pointer transition-all">Home</a>
                 <a href="post.php" class="hover:text-[#6366F1] cursor-pointer transition-all">Post</a>
                 <a href="explore.php" class="hover:text-[#6366F1] cursor-pointer transition-all">Explore</a>
                 <a href="ide.php" class="hover:text-[#6366F1] cursor-pointer transition-all">Forums</a>
