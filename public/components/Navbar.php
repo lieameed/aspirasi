@@ -13,6 +13,8 @@
             <a href="index.php?url=feedback" class="hover:text-[#6366F1] transition-all">Feedbacks</a>
             
             <a href="index.php?url=detailide" class="hover:text-[#6366F1] transition-all">Detailed</a>
+
+            <a href="index.php?url=explore" class="hover:text-[#6366F1] transition-all">Explore</a>
             
             <a href="index.php?url=notifications" class="hover:text-[#6366F1] transition-all">Notification</a>
             

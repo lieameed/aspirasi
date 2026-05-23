@@ -5,10 +5,8 @@ require_once __DIR__ . '/../../app/db-connection/db-connection.php';
 require_once __DIR__ . '/../../app/controllers/PostController.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // 1. Panggil fungsi koneksi dari db-connection.php lu
     $conn = getDatabaseConnection();
-    
-    // 2. Masukin variabel $conn ke dalam Controller
+
     $postController = new PostController($conn);
     
     $result = $postController->createPost($_POST, $_FILES);

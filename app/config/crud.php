@@ -95,17 +95,13 @@ function getIdeaById($id) {
     return mysqli_fetch_assoc($result);
 }
 
-
-// Hapus fungsi getAllIdeas() yang lama, ganti dengan versi sakti ini:
 function getAllIdeas($conn, $filter = 'all') {
-    // Pastikan koneksi ada, kalau gak ada kita bikin lokal
     if (!$conn) {
         $conn = koneksi();
     }
 
     $sql = "SELECT * FROM ideas";
     
-    // Logika Filter
     if ($filter !== 'all') {
         $filterSafe = mysqli_real_escape_string($conn, $filter);
         $sql .= " WHERE category = '$filterSafe'";
@@ -116,8 +112,6 @@ function getAllIdeas($conn, $filter = 'all') {
     return mysqli_query($conn, $sql);
 }
 
-// Pastikan redirect di bagian POST pakai ini biar gak nyasar:
-// window.location.href='index.php?url=ide';
 function deleteIdea($id) {
     $db = koneksi();
     $safe_id = mysqli_real_escape_string($db, $id);
