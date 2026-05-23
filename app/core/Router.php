@@ -1,32 +1,45 @@
 <?php
 
-namespace App\Models;
+class App {
+    protected $controller = 'Signup';
+    protected $method = 'index';
+    protected $params = [];
 
-use App\Core\Model;
+    public function __construct() {
+        $url = $this->parseURL();
 
-class UserModel extends Model
-{
-    public function registerUser($username, $password)
-    {
-        // Mengamankan password dengan hash
-        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-        
-        $query = "INSERT INTO users (username, password) VALUES (?, ?)";
-        $stmt = mysqli_prepare($this->connection, $query);
-        
-        mysqli_stmt_bind_param($stmt, "ss", $username, $hashedPassword);
-        return mysqli_stmt_execute($stmt);
+        if (isset($url[0])) {
+            if (file_exists('../app/controllers/' . ucfirst($url[0]) . '.php')) {
+                $this->controller = ucfirst($url[0]);
+                unset($url[0]);
+            }
+        }
+
+        require_once '../app/controllers/' . $this->controller . '.php';
+        $this->controller = new $this->controller;
+
+        if (isset($url[1])) {
+            if (method_exists($this->controller, $url[1])) {
+                $this->method = $url[1];
+                unset($url[1]);
+            }
+        }
+
+        if (!empty($url)) {
+            $this->params = array_values($url);
+        }
+        call_user_func_array([$this->controller, $this->method], $this->params);
     }
 
-    public function checkLogin($username)
-    {
-        $query = "SELECT * FROM users WHERE username = ?";
-        $stmt = mysqli_prepare($this->connection, $query);
-        
-        mysqli_stmt_bind_param($stmt, "s", $username);
-        mysqli_stmt_execute($stmt);
-        
-        $result = mysqli_stmt_get_result($stmt);
-        return mysqli_fetch_assoc($result);
+    public function parseURL() {
+        if (isset($_GET['url'])) {
+            $url = rtrim($_GET['url'], '/');
+            $url = filter_var($url, FILTER_SANITIZE_URL);
+            $url = explode('/', $url);
+            return $url;
+        }
+        return [];
     }
 }
+
+?>

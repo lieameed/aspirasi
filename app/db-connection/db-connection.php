@@ -1,6 +1,17 @@
 <?php
-    define('DB_HOST', 'localhost');
-    define('DB_USER','root');
-    define('DB_PASSWORD','');
-    define('DB_NAME','login_system');
+function getDatabaseConnection() {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "abcd"; 
+
+    $conn = mysqli_connect($servername, $username, $password, $database);
+
+    if (!$conn) {
+        die("Koneksi gagal: " . mysqli_connect_error());
+    }
+    
+    return $conn;
+}
+
 ?>

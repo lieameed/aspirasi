@@ -1,35 +1,29 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "abc"; 
+require_once __DIR__ . '/../db-connection/db-connection.php';
 
-$conn = new mysqli($servername, $username, $password, $database);
+$conn = getDatabaseConnection();
 
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
-}
-
-$email = $_POST['email'] ?? null;
-$pass = $_POST['password'] ?? null;
+$nama    = $_POST['nama'] ?? null; 
+$pass    = $_POST['password'] ?? null;
 $confirm = $_POST['confirm_password'] ?? null;
 
+if (!$nama || !$pass) {
+    echo "<script>alert('Data harus diisi!'); window.history.back();</script>";
+    exit;
+}
+
 if ($pass !== $confirm) {
-    echo "<script>alert('Passwords do not match!'); window.location.href='../../signup/index.php';</script>";
+    echo "<script>alert('Password tidak cocok!'); window.history.back();</script>";
     exit;
 }
 
 $hashed = password_hash($pass, PASSWORD_DEFAULT);
 
-$stmt = $conn->prepare("INSERT INTO users (email, password_hash) VALUES (?, ?)");
-$stmt->bind_param("ss", $email, $hashed);
+$stmt = $conn->prepare("INSERT INTO users (nama, password_hash) VALUES (?, ?)");
+$stmt->bind_param("ss", $nama, $hashed);
 
 if ($stmt->execute()) {
-    echo "<script>alert('Account created successfully!'); window.location.href='../../login/index.php';</script>";
+    echo "<script>alert('Berhasil Daftar!'); window.location.href='../index.php?url=login';</script>";
 } else {
     echo "Error: " . $conn->error;
 }
-
-$stmt->close();
-$conn->close();
-?>
