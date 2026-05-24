@@ -107,7 +107,43 @@ ASPI/
 * **Smart Category Filtering:** Don't get lost in the feed. Easily sort and filter ideas by specific categories to find exactly what you are looking for.
 * **Interactive Feedback System:** Engage with your peers! Leave constructive feedback and comments on other students' ideas to collaborate and build a better environment together.
 ---
+System Flow (Alur Sistem) 🔄
+Here is the step-by-step journey of how a user interacts with the Aspirasi Ide Siswa platform:
 
+1. Authentication Phase (Login & Registration)
+
+New Users: A student visits the website and navigates to the signup.php page to create a new account by providing their details.
+
+Returning Users: Existing students go to login.php to securely log into their accounts.
+
+Note: Unauthenticated users are restricted from posting or interacting with ideas until they log in.
+
+2. Exploring and Filtering Ideas
+
+Once logged in, the user lands on the Homepage, which provides a general overview.
+
+To see what others are suggesting, they navigate to the Ideas Page. Here, they can scroll through a dedicated feed of student aspirations.
+
+On this page, users can utilize the Category Filter to easily sort and find specific ideas based on relevant topics (e.g., Facilities, Events, Academic).
+
+3. Contributing an Idea (Posting & CRUD)
+
+If a student has an aspiration to share, they navigate to the Add Idea page.
+
+They can write their thoughts (text) and upload supporting media (images) to make their post stand out.
+
+After publishing, the idea appears on the public Ideas feed.
+
+Management: Students can visit their profile to view, update (edit), or delete their own previous posts at any time.
+
+4. Engagement & Collaboration (Feedback)
+
+Users can click on any idea in the feed to open the Detailed Idea Page (detailide.php).
+
+In this detailed view, they can read the full description and interact by leaving Feedback on their peers' ideas.
+
+This creates a collaborative environment where students can discuss and refine school improvements together.
+---
 # coding languages that will be used :globe_with_meridians: :fire: :cold_face:
 <p align="left">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
