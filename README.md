@@ -107,7 +107,8 @@ ASPI/
 * **Smart Category Filtering:** Don't get lost in the feed. Easily sort and filter ideas by specific categories to find exactly what you are looking for.
 * **Interactive Feedback System:** Engage with your peers! Leave constructive feedback and comments on other students' ideas to collaborate and build a better environment together.
 ---
-System Flow (Alur Sistem) 🔄
+
+# System Flow (Alur Sistem) 🔄
 Here is the step-by-step journey of how a user interacts with the Aspirasi Ide Siswa platform:
 
 1. Authentication Phase (Login & Registration)
@@ -143,6 +144,7 @@ Users can click on any idea in the feed to open the Detailed Idea Page (detailid
 In this detailed view, they can read the full description and interact by leaving Feedback on their peers' ideas.
 
 This creates a collaborative environment where students can discuss and refine school improvements together.
+
 ---
 # coding languages that will be used :globe_with_meridians: :fire: :cold_face:
 <p align="left">
