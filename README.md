@@ -21,10 +21,10 @@ npm run dev
 # Installing The Database
 
 - Go To PhpMyAdmin
-- Next, Create Database named "aspi"
+- Next, Create Database named "abcd"
 
 ```bash
-aspi
+abcd
 ```
 
 - then, grab the sql that is in this file(aspi.sql), and import the sql file
@@ -34,50 +34,86 @@ aspi
 
 Our Project Structure
 ```bash
-ProjectRoot/
-├── app/                        # Main application backend logic (MVC)
-│   ├── config/                 # Global configuration settings
-│   ├── controllers/            # Logic that handles requests (Connects Models & Views)
-│   ├── core/                   # Core classes (Router, App, Controller base)
-│   ├── db-connection/          # Database connection logic
-│   │   └── db-connection.php   # Database PDO/MySQLi instance
-│   ├── models/                 # Database interaction and data logic
-│   ├── resources/              # Source assets
-│   │   └── css/                # Tailwind input source (input.css)
-│   └── views/                  # Frontend templates (HTML/PHP pages)
-│
-├── public/                     # Web Root (Publicly accessible files)
-│   ├── assets/                 # Static assets
-│   │   ├── fonts/              # Custom fonts (e.g., Italiana-Regular.ttf)
-│   │   └── images/             # Image assets (e.g., karbit gerfa.png)
-│   ├── css/                    # Compiled Stylesheets
-│   │   └── output.css          # Final Tailwind CSS (Used in views)
-│   ├── js/                     # Client-side scripts
-│   ├── php/                    # Public entry scripts (Actual pages)
-│   │   ├── homepage.php        # Main Landing Page
-│   │   ├── ide.php             # Ideas Page
-│   │   ├── detailide.php       # Detailed Ideas Page
-│   │   ├── login.php           # Login Page
-│   │   └── signup.php          # Registration Page
-│   ├── sql/                    # Database migrations and exports
-│   └── index.php               # Application entry point
-│
-├── node_modules/               # NPM dependencies (Tailwind, etc.)
-├── .gitignore                  # Files to exclude from Git
-├── package.json                # NPM project metadata and scripts
-└── README.md                   # Project documentation
+ASPI/
+├── app/
+│   ├── config/
+│   │   ├── crud.php
+│   │   ├── fedback.php
+│   │   ├── login.php
+│   │   └── register.php
+│   ├── controllers/
+│   │   ├── detailide.php
+│   │   ├── explore.php
+│   │   ├── fedback.php
+│   │   ├── feedback.php
+│   │   ├── Home.php
+│   │   ├── ide.php
+│   │   ├── ideas.php
+│   │   ├── login.php
+│   │   ├── Notifications.php
+│   │   ├── PostController.php
+│   │   ├── profile.php
+│   │   ├── signup.php
+│   │   └── upload.php
+│   ├── core/
+│   │   └── Router.php
+│   ├── db-connection/
+│   │   └── db-connection.php
+│   ├── models/
+│   ├── resources/
+│   │   └── css/
+│   │       └── input.css
+│   └── views/
+│       ├── addfedback.php
+│       ├── addidea.php
+│       ├── detailide.php
+│       ├── explore.php
+│       ├── feedback.php
+│       ├── homepage.php
+│       ├── ide.php
+│       ├── login.php
+│       ├── notifications.php
+│       ├── profile.php
+│       ├── signup.php
+│       └── upload.php
+├── node_modules/
+├── public/
+│   ├── action/
+│   │   ├── feedback.php
+│   │   ├── ideas.php
+│   │   ├── login_action.php
+│   │   ├── post_action.php
+│   │   └── register_action.php
+│   ├── assets/
+│   │   ├── fonts/
+│   │   └── images/
+│   ├── components/
+│   │   └── Navbar.php
+│   ├── css/
+│   │   └── output.css
+│   ├── sql/
+│   │   └── abcd.sql
+│   └── index.php
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
 ```
+# Key Features :sparkles:
 
+* **Secure User Authentication:** Create an account and log in safely to start sharing your voice and joining the community.
+* **Rich Media Posts:** Share your thoughts Reddit-style! Upload images alongside your text to make your ideas visually engaging and stand out.
+* **Complete Idea Management (CRUD):** You have full control over your submissions. Easily create, read, update, and delete your own ideas at any time.
+* **Smart Category Filtering:** Don't get lost in the feed. Easily sort and filter ideas by specific categories to find exactly what you are looking for.
+* **Interactive Feedback System:** Engage with your peers! Leave constructive feedback and comments on other students' ideas to collaborate and build a better environment together.
 ---
 
 # coding languages that will be used :globe_with_meridians: :fire: :cold_face:
 <p align="left">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
 </p>
 
 ---
